@@ -10,12 +10,10 @@ public class LoginForm extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout(10, 10));
 
-        // Título
         JLabel titulo = new JLabel("MI APLICACIÓN", SwingConstants.CENTER);
         titulo.setFont(new Font("Arial", Font.BOLD, 16));
         add(titulo, BorderLayout.NORTH);
 
-        // Panel central con campos
         JPanel panelCentral = new JPanel(new GridLayout(4, 2, 5, 5));
         panelCentral.setBorder(BorderFactory.createEmptyBorder(10, 20, 10, 20));
 
@@ -33,7 +31,6 @@ public class LoginForm extends JFrame {
 
         add(panelCentral, BorderLayout.CENTER);
 
-        // Botón entrar
         JPanel panelBoton = new JPanel(new GridLayout(2, 1));
         JButton btnEntrar = new JButton("Entrar");
         panelBoton.add(btnEntrar);
